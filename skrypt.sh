@@ -16,7 +16,9 @@ elif [ "$1" == "--help" || "$1" == "-h" ]; then
     echo "przyjmowane flagi:"
     echo "$0 --date or -d"
     echo "$0 --logs or -l"
-    echo "$0 --logs x (gdzie x to dodatnia liczba calowita) -l x"
+    echo "$0 --logs x or -l x (gdzie x to dodatnia liczba calowita)"
+    echo "$0 --init"
+    echo "$0 --error x or -e x"
 elif [ "$1" == "--init" ]; then
 	git clone https://github.com/CezarySosialuk/Lab4.git cloned_one
 elif [ "$1" == "--error" || "$1" == "-e"]; then
