@@ -12,10 +12,10 @@ elif [ "$1" == "--logs" ]; then
 		touch "log$i.txt"
 	    done
     fi
-else
+elif ["$1" == "--help"]; then
     echo "przyjmowane flagi:"
     echo "$0 --date"
     echo "$0 --logs"
-    echo "$0 --logs x (gdzie x to dodatnia liczba calowita"
+    echo "$0 --logs x (gdzie x to dodatnia liczba calowita)"
 fi
 
